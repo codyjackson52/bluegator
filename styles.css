@@ -176,17 +176,26 @@ button:hover {
 /* Niches Grid */
 .niches-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  padding: 0 1rem;
 }
 
 .niche-card {
   background: white;
-  padding: 1rem;
+  padding: 1.25rem;
   border-radius: 8px;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-weight: 500;
+}
+
+.niche-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
@@ -218,5 +227,22 @@ footer {
 
   .features-list {
     padding: 0 1rem;
+  }
+
+  .niches-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    gap: 1rem;
+  }
+
+  .niche-card {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .niches-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 600px;
   }
 }
