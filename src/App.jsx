@@ -11,7 +11,7 @@ import "./styles/App.css";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/bluegator">
       <div className="app">
         <Header />
         <main className="main-content">
