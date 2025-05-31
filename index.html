@@ -3,139 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BlueGator Leads - Real Customers for Service Businesses</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta
+      name="description"
+      content="BlueGator is an automation-first platform that builds high-converting local funnels for blue-collar businesses. We don't just generate leads — we automate the entire customer flow."
+    />
+    <meta
+      property="og:title"
+      content="BlueGator - Automated Customer Flow for Local Contractors"
+    />
+    <meta
+      property="og:description"
+      content="We build lead machines for junk removal, tree trimming, and remodeling businesses — and send customers straight to your phone. No fluff. Just qualified jobs."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>BlueGator - Automated Customer Flow for Local Contractors</title>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="logo">BlueGator Leads</div>
-      </div>
-    </header>
-
-    <section class="hero">
-      <div class="container">
-        <h1>🚛 We Send You Real Customers,<br />Not Cold Leads</h1>
-        <p>
-          Stop wasting money on tire-kickers. Get exclusive, pre-qualified
-          customers in your service area ready to hire you today.
-        </p>
-
-        <form class="lead-form" id="leadForm">
-          <div class="form-group">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" required />
-          </div>
-          <div class="form-group">
-            <label for="service">Select Your Service</label>
-            <select id="service" name="service" required>
-              <option value="">Choose a service...</option>
-              <option value="junk">Junk Removal</option>
-              <option value="tree">Tree Service</option>
-              <option value="lawn">Lawn Care</option>
-              <option value="cleaning">House Cleaning</option>
-              <option value="moving">Moving Service</option>
-              <option value="hvac">HVAC</option>
-              <option value="other">Other Service</option>
-            </select>
-          </div>
-          <button type="submit">Get Real Customers Now</button>
-        </form>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <h2>How It Works</h2>
-        <div class="steps">
-          <div class="step-card">
-            <div class="step-number">1</div>
-            <h3>We Find Customers</h3>
-            <p>
-              We identify local customers actively searching for your services
-            </p>
-          </div>
-          <div class="step-card">
-            <div class="step-number">2</div>
-            <h3>We Verify Intent</h3>
-            <p>
-              Our team pre-qualifies each lead to confirm their service needs
-            </p>
-          </div>
-          <div class="step-card">
-            <div class="step-number">3</div>
-            <h3>You Get Business</h3>
-            <p>Qualified customers are sent directly to you, ready to hire</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <h2>What Makes Us Different</h2>
-        <ul class="features-list">
-          <li>
-            <strong>Real-Time Delivery:</strong> Get leads instantly while
-            customers are actively looking
-          </li>
-          <li>
-            <strong>Exclusive Leads:</strong> Each lead is sent to only one
-            service provider
-          </li>
-          <li>
-            <strong>Pre-Qualified:</strong> We verify customer intent before
-            sending you the lead
-          </li>
-          <li>
-            <strong>Local Focus:</strong> Only receive leads within your service
-            area
-          </li>
-          <li>
-            <strong>No Contracts:</strong> Pay only for the leads you want
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <h2>Industries We Serve</h2>
-        <div class="niches-grid">
-          <div class="niche-card">Junk Removal</div>
-          <div class="niche-card">Tree Trimming</div>
-          <div class="niche-card">Lawn Care</div>
-          <div class="niche-card">House Cleaning</div>
-          <div class="niche-card">Moving Services</div>
-          <div class="niche-card">HVAC</div>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <div class="container">
-        <p>&copy; 2024 BlueGator Leads. All rights reserved.</p>
-      </div>
-    </footer>
-
-    <script>
-      document
-        .getElementById("leadForm")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-          alert(
-            "Thank you for your interest! We will contact you shortly to discuss sending you pre-qualified customers."
-          );
-          this.reset();
-        });
-    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

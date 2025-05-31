@@ -1,0 +1,157 @@
+.home {
+  padding-top: 4rem;
+}
+
+/* Hero Section */
+.hero {
+  padding: 6rem 0 4rem;
+  background: white;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+}
+
+.hero p {
+  font-size: clamp(1.125rem, 2vw, 1.25rem);
+  color: var(--gray-600);
+  max-width: 48rem;
+  margin: 0 auto 2rem;
+}
+
+/* How It Works */
+.how-it-works {
+  padding: 4rem 0;
+  background: var(--gray-50);
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .steps-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.step-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+}
+
+.step-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.step-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+/* Pricing Section */
+.pricing {
+  padding: 4rem 0;
+  background: white;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .pricing-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.pricing-card {
+  background: var(--gray-50);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+}
+
+.pricing-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.pricing-card p {
+  color: var(--gray-600);
+  margin-bottom: 1.5rem;
+}
+
+.pricing-card ul {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.pricing-card li {
+  padding: 0.5rem 0;
+  color: var(--gray-600);
+}
+
+.pricing-card li::before {
+  content: "✓";
+  color: var(--accent);
+  margin-right: 0.5rem;
+}
+
+/* Tools Section */
+.tools {
+  padding: 4rem 0;
+  background: var(--gray-50);
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .tools-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.tool-card {
+  text-align: center;
+}
+
+.tool-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Section Titles */
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
